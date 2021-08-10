@@ -114,7 +114,6 @@ describe("[GET] /users", () => {
     });
 
     const response = await request(app).get("/users").set("user_id", user1.id);
-
     expect(
       response.body.map((res) => ({
         ...res,
